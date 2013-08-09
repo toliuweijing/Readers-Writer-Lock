@@ -1,7 +1,7 @@
 Readers-Writer-Lock
 ===================
 Version 1.1
-integrate RWLock with std::unique_lock. e.g. std::unique_lock ul(RWLock);
+integrate RWLock with std::unique_lock. e.g. std::unique_lock ul(RWLock); ...
 
 Version 1.0
 Provide implementation of Readers-Writer lock. Reader lock is shared among readers 
