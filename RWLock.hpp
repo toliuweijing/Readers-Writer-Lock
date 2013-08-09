@@ -6,6 +6,8 @@
 #include<condition_variable>
 
 
+
+
 class RWLock {
 public:
     RWLock();
@@ -23,7 +25,9 @@ public:
 private:
     int numReaders_;
     std::mutex mtx_numReaders_;
+    std::mutex mtx_writer_;
     std::condition_variable_any cv_numReaders_;
 };
+
 
 #endif
